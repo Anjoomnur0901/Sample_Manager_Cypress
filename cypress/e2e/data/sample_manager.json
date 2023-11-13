@@ -1,0 +1,12 @@
+{
+    "program_name" :"test Program Anjoom",
+    "program_description" : "test by Anjoom",
+    "tag" : "test",
+    "project_name":"test Project Anjoom",
+    "project_description" :"test by Anjoom",
+    "sponsor_protocol_number":"12345",
+    "study_name":"test Study Anjoom",
+    "study_description":"test by Anjoom",
+    "import_manifest":"//button[normalize-space()='Import Manifest File']"
+   
+}
