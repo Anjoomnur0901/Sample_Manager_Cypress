@@ -158,5 +158,31 @@ class Sample_Manager_Page{
         cy.xpath(samplelocators.config_tab).click()
         cy.wait(4000)
         cy.contains(samplelocators.radio_button_config,'Sample Manager').click()
+        cy.get(samplelocators.table).within(() => {
+         
+            cy.get('tbody > tr:first').within(() => {
+            
+              cy.get(samplelocators.editBTN).click({ force: true }); 
+            });
+        });
+        cy.get(samplelocators.configbox).within(() => {
+           if(samplelocators.already_chosen){
+                cy.wait(2000)
+                cy.xpath(samplelocators.close).click()
+                cy.log("Samples Already Chosen")
+           }
+           else{
+              cy.contains('span', 'Sample Id')
+              .closest(samplelocators.property_1) // Replace 'div' with the closest common parent element of the input and span
+              .find('input[class^=\'ng-untouched ng-pristine ng-valid\']')
+              .check();
+              cy.contains('span', 'Barcode')
+              .closest(samplelocators.property_2) // Replace 'div' with the closest common parent element of the input and span
+              .find('input[class^=\'ng-untouched ng-pristine ng-valid\']')
+              .check();
+              cy.xpath(samplelocators.SaveBtn).should('be.enabled').click()
+              cy.log("Sample Id and Barcode has been chosen")
+            }
+        })  
     }
 }export default Sample_Manager_Page 

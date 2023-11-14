@@ -52,7 +52,16 @@
    
     "damaged_tab":"//div[contains(text(),'Damaged')]",
     "config_tab":"//a[normalize-space()='Config']",
-    "radio_button_config":"mat-radio-button span"
-
+    "radio_button_config":"mat-radio-button span",
+    "table":"table[role='table']",
+    "editBTN":"a.mat-raised-button",
+    "configbox":".detail-content",
+    "table_config":"//table[@class='table table-scroll']",
+    "property_1":"tbody tr td p:nth-child(4)",
+    "property_2":"tbody tr td p:nth-child(5)",
+    "SaveBtn":"//button[normalize-space()='Save']",
+    "already_chosen":"//h3[normalize-space()='Already chosen properties']",
+    "close":"//button[@class='close']"
+    
 
 }
