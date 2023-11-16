@@ -1,12 +1,11 @@
 {
-    "program_name" :"test Program Anjoom",
-    "program_description" : "test by Anjoom",
+    "program_name" :"test Program Anjoom for Automation",
+    "program_description" : "test by Anjoom for Automation",
     "tag" : "test",
-    "project_name":"test Project Anjoom",
-    "project_description" :"test by Anjoom",
+    "project_name":"test Project Anjoom for Automation",
+    "project_description" :"test by Anjoom for Automation",
     "sponsor_protocol_number":"12345",
-    "study_name":"test Study Anjoom",
-    "study_description":"test by Anjoom",
-    "import_manifest":"//button[normalize-space()='Import Manifest File']"
+    "study_name":"test Study Anjoom for Automation",
+    "study_description":"test by Anjoom for Automation"
    
 }

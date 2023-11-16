@@ -28,10 +28,13 @@ describe('Login',() =>{
     it('Upload Manifest',()=>{
         sample_manager.uploadManifest()
     })
-    it('Not Received',()=>{
+    it('Not Received to Damaged',()=>{
         sample_manager.notReceivedtoDamaged()
     })
     it('Config',()=>{
         sample_manager.config()
+    })
+    it('Not Received to Pending', ()=>{
+        sample_manager.notReceivedtoPending()
     })
 })

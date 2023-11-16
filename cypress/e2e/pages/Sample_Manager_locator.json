@@ -46,6 +46,7 @@
     "form_touched":".ng-invalid.ng-touched.ng-dirty",
     "choose_status":"div[class^='mat-form-field-flex ng-tns-c131-']",
     "Damaged" : "//span[normalize-space()='Damaged']",
+    "Pending" :"//span[normalize-space()='Pending']",
     "pick_a_comment_input":"div[class^='mat-form-field-outline ng-tns-c131-'][class*='ng-star-inserted']",
     "status_option_box":"#selected-panel",
     "pcomment":"//span[normalize-space()='Sample label is missing']",
@@ -55,13 +56,31 @@
     "radio_button_config":"mat-radio-button span",
     "table":"table[role='table']",
     "editBTN":"a.mat-raised-button",
-    "configbox":".detail-content",
+    "configbox":".setting-details-container > .detail-content",
     "table_config":"//table[@class='table table-scroll']",
     "property_1":"tbody tr td p:nth-child(4)",
     "property_2":"tbody tr td p:nth-child(5)",
     "SaveBtn":"//button[normalize-space()='Save']",
-    "already_chosen":"//h3[normalize-space()='Already chosen properties']",
-    "close":"//button[@class='close']"
-    
+    "already_chosen":".warn.ng-star-inserted",
+    "close":"//button[@class='close']",
+    "receipt":"//div[@class='ng-star-inserted']//app-sample-receipt",
+    "receipt_name":"div[class='ng-star-inserted'] tr:nth-child(1) input[id='mat-input-0']",
+    "storage_condition":"div[class='ng-star-inserted'] tr:nth-child(9) mat-radio-button[id^='mat-radio-']",
+    "shipment_condition":"div[class='ng-star-inserted'] tr:nth-child(10) mat-radio-button[id^='mat-radio-']",
+    "temperature_control":"div[class='ng-star-inserted'] tr:nth-child(11) mat-radio-button[id^='mat-radio-']",
+    "status_upon_receipt":"div[class='ng-star-inserted'] tr:nth-child(12) mat-radio-button[id^='mat-radio-']",
+    "express_waybill":"div[class='ng-star-inserted'] tr:nth-child(13) mat-radio-button[id^='mat-radio-']",
+    "transfer_form":"div[class='ng-star-inserted'] tr:nth-child(14) mat-radio-button[id^='mat-radio-']",
+    "abnormal_situation_record":"div[class='ng-star-inserted'] tr:nth-child(17) mat-radio-button[id^='mat-radio-']",
+    "temporary_storage_location":"div[class='ng-star-inserted'] tr:nth-child(18) div[class^='mat-form-field-flex ng-tns-c131-']",
+    "temporary_storage_sublocation":"div[class='ng-star-inserted'] tr:nth-child(19)",
+    "location":"//span[normalize-space()='-20 Freezer #1 (SOM829) Eggs']",
+    "sublocation":"//span[normalize-space()='MabTech Box']",
+
+    "sam_6":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(7) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_7":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(8) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_8":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(9) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_9":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(10) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_10":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(11) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)"
 
 }
