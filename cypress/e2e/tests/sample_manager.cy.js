@@ -37,4 +37,7 @@ describe('Login',() =>{
     it('Not Received to Pending', ()=>{
         sample_manager.notReceivedtoPending()
     })
+    it('Accession',()=>{
+        sample_manager.accession()
+    })
 })

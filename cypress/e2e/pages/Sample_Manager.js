@@ -22,6 +22,7 @@ class Sample_Manager_Page{
         cy.contains('button', 'Save').click({ force: true })
         cy.reload();
         cy.wait(5000) 
+        
         cy.get(samplelocators.top_tabledata).invoke('text').then((actualProgText) => {
             cy.log('Actual Text: ' + actualProgText);
             cy.log('Expected Text: ' + sampledata.program_name);
@@ -32,6 +33,7 @@ class Sample_Manager_Page{
     }
     createNewProject(){
 
+        
         cy.get(samplelocators.new_ProjBTN).click()
         cy.wait(1000)
         cy.xpath(samplelocators.project_name).type(sampledata.project_name)
@@ -50,7 +52,6 @@ class Sample_Manager_Page{
         cy.wait(6000);
     }
     createNewStudy(){
-    
         cy.get(samplelocators.new_StudyBTN).click()
         cy.wait(1000)
         cy.xpath(samplelocators.study_name).type(sampledata.study_name)
@@ -67,6 +68,7 @@ class Sample_Manager_Page{
         cy.wait(6000)
     }
     uploadManifest(){
+        
         
         const filepath = 'Manifest from Gordon.xlsx';
         cy.xpath(samplelocators.upload_manifest).click()
@@ -107,6 +109,7 @@ class Sample_Manager_Page{
         cy.xpath(samplelocators.importBTN).should('be.enabled').click();
         cy.wait(10000)
         cy.reload(); 
+        
         cy.get(samplelocators.top_tabledata).click({force: true})
         cy.intercept('GET','https://test.intellilab.ca:8080/sampleManifest/count/vial/*')
         cy.intercept('GET','https://test.intellilab.ca:8080/sampleManifest/allData/*')
@@ -115,10 +118,11 @@ class Sample_Manager_Page{
     }
 
     notReceivedtoDamaged(){
-    
+      
         cy.xpath(samplelocators.not_received).click()
         cy.intercept('GET','https://test.intellilab.ca:8080/sampleManifest/count/vial/*/Not%20Received')
         cy.wait(6000)
+        
         cy.get(samplelocators.sam_1).check()
         cy.get(samplelocators.sam_2).check()
         cy.get(samplelocators.sam_3).check()
@@ -144,9 +148,10 @@ class Sample_Manager_Page{
           cy.get(samplelocators.pick_a_comment_input).click({force: true})
           cy.xpath(samplelocators.pcomment).click()
           cy.contains('button', 'Save').click()
-        });
-        
+        }); 
+        cy.wait(5000)
         cy.xpath(samplelocators.damaged_tab).click()
+        cy.wait(5000)
       
     }
     config(){
@@ -158,14 +163,18 @@ class Sample_Manager_Page{
         cy.xpath(samplelocators.config_tab).click({ force: true })
         cy.wait(4000)
         cy.contains(samplelocators.radio_button_config,'Sample Manager').click()
+        cy.reload()
+        cy.wait(5000)
         cy.get(samplelocators.table).within(() => {
          
             cy.get('tbody > tr:first').within(() => {
             
               cy.get(samplelocators.editBTN).click({ force: true }); 
+              cy.wait(3000)
             });
         });
               cy.get(samplelocators.configbox).within(() => {
+                cy.wait(2000)
                 cy.xpath("//table[@class='table table-scroll']").then(($table) => {
                   if ($table.length > 0 && $table[0].offsetWidth > 0 && $table[0].offsetHeight > 0) {
                   cy.contains('span', 'Sample Id')
@@ -181,43 +190,39 @@ class Sample_Manager_Page{
                   cy.xpath(samplelocators.SaveBtn)
                     .should('be.enabled')
                     .click();
-                
+                  cy.wait(5000)
                   cy.log("Sample Id and Barcode have been chosen");
+                  cy.reload()
                 } else {
                   cy.wait(2000);
                   cy.xpath(samplelocators.close).click();
                   cy.log("Samples Already Chosen");
+                  
                 }
                 })
               });
-              cy.xpath("//table[@class='table table-scroll']").then(($table) => {
-              if ($table.length > 0 && $table[0].offsetWidth > 0 && $table[0].offsetHeight > 0) {
-              cy.log("Table is visible");
-              } else {
-              cy.log("Table is not visible");
-              }
-            });    
+              
     }
     notReceivedtoPending(){
       cy.get(samplelocators.arrow).trigger('mouseover')
         cy.xpath(samplelocators.more).invoke("show").click({ force: true })
-        cy.wait(1000)
+        cy.wait(2000)
         cy.xpath(samplelocators.sample_manager).click()
-        cy.wait(4000)
+        cy.wait(5000)
         cy.get(samplelocators.program_dashboard).eq(1).click()
+        cy.wait(7000)
+        cy.get(samplelocators.top_tabledata).click();
+        cy.wait(7000);
+        cy.reload();
+        cy.wait(5000)
+        cy.get(samplelocators.top_tabledata).click();
+        cy.wait(7000);
+        cy.reload();
+        cy.wait(7000)
+        cy.get(samplelocators.top_tabledata).click();
+        cy.wait(7000);
+        cy.reload();
         cy.wait(6000)
-        cy.get(samplelocators.top_tabledata).click();
-        cy.wait(6000);
-        cy.reload();
-        cy.wait(5000)
-        cy.get(samplelocators.top_tabledata).click();
-        cy.wait(6000);
-        cy.reload();
-        cy.wait(5000)
-        cy.get(samplelocators.top_tabledata).click();
-        cy.wait(6000);
-        cy.reload();
-        cy.wait(5000)
         cy.get(samplelocators.top_tabledata).click({force: true})
         cy.intercept('GET','https://test.intellilab.ca:8080/sampleManifest/count/vial/*')
         cy.intercept('GET','https://test.intellilab.ca:8080/sampleManifest/allData/*')
@@ -230,11 +235,27 @@ class Sample_Manager_Page{
       cy.xpath(samplelocators.not_received).click()
         cy.intercept('GET','https://test.intellilab.ca:8080/sampleManifest/count/vial/*/Not%20Received')
         cy.wait(6000)
+        
         cy.get(samplelocators.sam_6).check()
+        cy.wait(1000)
         cy.get(samplelocators.sam_7).check()
+        cy.wait(1000)
         cy.get(samplelocators.sam_8).check()
+        cy.wait(1000)
         cy.get(samplelocators.sam_9).check()
+        cy.wait(1000)
         cy.get(samplelocators.sam_10).check()
+        cy.wait(1000)
+        cy.get(samplelocators.sam_11).check()
+        cy.wait(1000)
+        cy.get(samplelocators.sam_12).check()
+        cy.wait(1000)
+        cy.get(samplelocators.sam_13).check()
+        cy.wait(1000)
+        cy.get(samplelocators.sam_14).check()
+        cy.wait(1000)
+        cy.get(samplelocators.sam_15).check()
+        cy.wait(1000)
         cy.xpath(samplelocators.change_statusBTN).click()
         cy.wait(5000)
 
@@ -264,6 +285,60 @@ class Sample_Manager_Page{
           cy.get(samplelocators.temporary_storage_sublocation).click()
           cy.xpath(samplelocators.sublocation).click()
           cy.contains('button', 'Generate Receipt').click()
+          cy.wait(6000)
         });
+    }
+    accession(){
+      cy.xpath(samplelocators.pending_tab).click({force: true})
+      cy.get(samplelocators.group_samples_by_id).trigger('mouseover')
+      cy.get(samplelocators.id).invoke("show").find(samplelocators.subject_id).check({force: true})
+      cy.contains('button', 'Start Accession').click()
+      cy.get(samplelocators.dialog_container)
+        .should('be.visible')
+        .within(() => {
+            cy.contains('button', 'Start Accession').click({force: true}) });
+            // Find the element containing the text 'Total Selected Samples:'
+            cy.xpath("//h5[contains(text(), 'Total Selected Samples:')]")
+            .invoke('text')
+            .then((text) => {
+            // Extracting the number using regular expression
+            const number = parseInt(text.match(/\d+/)[0], 10);
+            // Use the 'number' extracted here in your Cypress test
+            // For instance, log it or perform actions based on this number
+            cy.log(`Extracted number: ${number}`);
+            // Perform actions based on the extracted 'number'
+              // For example, click a button 'number' times
+              if(number>0){
+              if(number>1) {
+              for (let i = 0; i < number-1; i++) {
+                //cy.get('app-sample-accession button.btn.btn-success').debug()
+                cy.get(samplelocators.ok_btn).eq(0).should('be.enabled').click({force:true});
+                cy.wait(2000)
+             }
+             cy.get(samplelocators.sam_id_uncheck).eq(0).click()
+             cy.get(samplelocators.discrepant_btn).eq(0).should('be.enabled').click({force:true});
+            }
+           else {
+            cy.get(samplelocators.ok_btn).eq(0).should('be.enabled').click({force:true});
+           // cy.get('app-sample-accession button.btn.btn-success').trigger('mouseover').click();
+
+             }
+            
+            cy.get(samplelocators.rt).eq(0).click();
+            cy.get(samplelocators.asr).eq(0).click();
+            cy.get(samplelocators.Long_term_storage_box).eq(0).click({ force: true });
+            cy.xpath(samplelocators.storage_box).click({ force: true })
+            cy.wait(2000)
+            cy.get(samplelocators.Long_term_storage_box).eq(1).click({ force: true })
+            cy.xpath(samplelocators.sub_storage_location).click({ force: true })
+            cy.wait(2000)
+            cy.xpath(samplelocators.generate_accession_record).should('be.enabled').click({ force: true })
+
+            }
+      
+});
+
+      
+
     }
 }export default Sample_Manager_Page 

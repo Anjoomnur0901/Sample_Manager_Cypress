@@ -52,6 +52,7 @@
     "pcomment":"//span[normalize-space()='Sample label is missing']",
    
     "damaged_tab":"//div[contains(text(),'Damaged')]",
+    "pending_tab":"//div[contains(text(),'Pending')]",
     "config_tab":"//a[normalize-space()='Config']",
     "radio_button_config":"mat-radio-button span",
     "table":"table[role='table']",
@@ -81,6 +82,25 @@
     "sam_7":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(8) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
     "sam_8":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(9) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
     "sam_9":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(10) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
-    "sam_10":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(11) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)"
+    "sam_10":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(11) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_11":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(12) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_12":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(13) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_13":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(14) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_14":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(15) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "sam_15":"body > div:nth-child(2) > div:nth-child(2) > app-manifest-final:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(2) > div:nth-child(1) > div:nth-child(1) > app-manifest-samples:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > table:nth-child(1) > tbody:nth-child(16) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)",
+    "group_samples_by_id":".btn_dropbtn.pl-3.pr-3.mr-2",
+    "id":"mat-tab-body li:nth-child(1)",
+    "subject_id":"input[value^='Sub']",
+    "form_accession":"//form[@class='ng-pristine ng-valid ng-touched']",
+    "ok_btn":"app-sample-accession button.btn.btn-success",
+    "discrepant_btn":"app-sample-accession button.btn.btn-warning",
+    "sam_id_uncheck" : "tr:nth-child(1) label[for^='mat-checkbox-'] span[class='mat-checkbox-label']",
+    "rt":"tr:nth-child(7) label[for^='mat-radio-'] span[class='mat-radio-label-content']",
+    "asr": "tr:nth-child(8) label[for^='mat-radio-'] span[class='mat-radio-label-content']",
+    "Long_term_storage_box":"div[class='cdk-overlay-container'] tr:nth-child(9) > td:nth-child(2) div[class^='mat-form-field-outline mat-form-field-outline-thick ng-tns-c131-'][class*='ng-star-inserted'] div[class^='mat-form-field-outline-end ng-tns-c131-']",
+    "storage_box":"//span[@class='mat-option-text'][normalize-space()='-20 Freezer #5']",
+    "sub_storage_location":"//span[normalize-space()='Miscellaneous Box']",
+    "generate_accession_record": "//button[normalize-space()='Generate Accession Record']"
+
 
 }
