@@ -9,8 +9,6 @@ describe('Login',() =>{
         baseurl.visitBaseUrl()
     })
     it('Login Functionality Call', () => {
-        
-      
         login. provideLoginInformation()
     });
     it('Go to Sample Manager Tab',()=>{

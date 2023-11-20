@@ -1,11 +1,11 @@
 {
-    "program_name" :"test Program Anjoom for Automation1",
-    "program_description" : "test by Anjoom for Automation1",
+    "program_name" :"test Program for Automation1",
+    "program_description" : "test by for Automation1",
     "tag" : "test",
-    "project_name":"test Project Anjoom for Automation1",
-    "project_description" :"test by Anjoom for Automation1",
+    "project_name":"test Project for Automation1",
+    "project_description" :"test by for Automation1",
     "sponsor_protocol_number":"12345",
-    "study_name":"test Study Anjoom for Automation1",
-    "study_description":"test by Anjoom for Automation1"
+    "study_name":"test Study for Automation1",
+    "study_description":"test by for Automation1"
    
 }
